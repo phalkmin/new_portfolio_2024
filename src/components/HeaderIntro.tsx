@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "./Button";
-import RadialGradient from "./RadialGradient";
 import { headerIntroData } from "../assets/lib/data";
 import { useSectionInView } from "../assets/lib/hooks";
 import { useActiveSectionContext } from "../context/active-section-context";
@@ -16,25 +15,22 @@ const HeaderIntro: React.FC = () => {
     <section
       className="hero flex flex-col justify-center gap-10 items-center h-full max-lg:h-full max-lg:gap-6"
       ref={ref}
-      id="home"
-    >
-      <RadialGradient scale="scale-y-125" opacity="opacity-30" />
-
+      id="home">
       <img
         src={headerIntroData.profilepicture}
         alt={headerIntroData.profilepicture}
         className="w-1/6 drop-shadow-2xl rounded-full shadow-2xl avatar-img max-lg:w-3/4"
       />
       <h1>
-        {language === "DE"
-          ? headerIntroData.title.de
+        {language === "PT"
+          ? headerIntroData.title.pt
           : headerIntroData.title.en}
         <span className="wave text-7xl">&#128075;&#127997;</span>
       </h1>
       <h2>{headerIntroData.subtitle}</h2>
       <p className="w-1/2 text-center max-lg:hidden">
-        {language === "DE"
-          ? headerIntroData.description.de
+        {language === "PT"
+          ? headerIntroData.description.pt
           : headerIntroData.description.en}
       </p>
 
@@ -42,7 +38,7 @@ const HeaderIntro: React.FC = () => {
         {headerIntroData.buttons.map((button, index) => (
           <Button
             key={index}
-            label={language === "DE" ? button.label.de : button.label.en}
+            label={language === "PT" ? button.label.pt : button.label.en}
             iconSVG={button.icon}
             link={`#${button.name.toLocaleLowerCase()}`}
             buttoncolor={button.color}

@@ -1,6 +1,6 @@
 import { useEffect, useState, createContext, useContext } from "react";
 
-type language = "EN" | "DE";
+type language = "EN" | "PT";
 
 type LanguageContextProviderProps = {
   children: React.ReactNode;
@@ -20,13 +20,13 @@ export default function LanguageContextProvider({
 
   const toggleLanguage = () => {
     if (language === "EN") {
-      setLanguage("DE");
-      window.localStorage.setItem("language", "DE");
-      document.documentElement.classList.add("DE");
+      setLanguage("PT");
+      window.localStorage.setItem("language", "PT");
+      document.documentElement.classList.add("PT");
     } else {
       setLanguage("EN");
       window.localStorage.setItem("language", "EN");
-      document.documentElement.classList.remove("DE");
+      document.documentElement.classList.remove("PT");
     }
   };
 
@@ -38,12 +38,12 @@ export default function LanguageContextProvider({
     if (localLanguage) {
       setLanguage(localLanguage);
 
-      if (localLanguage === "DE") {
-        document.documentElement.classList.add("DE");
+      if (localLanguage === "PT") {
+        document.documentElement.classList.add("PT");
       }
-    } else if (window.matchMedia("(prefers-color-scheme: DE)").matches) {
-      setLanguage("DE");
-      document.documentElement.classList.add("DE");
+    } else if (window.matchMedia("(prefers-color-scheme: PT)").matches) {
+      setLanguage("PT");
+      document.documentElement.classList.add("PT");
     }
   }, []);
 
@@ -52,8 +52,7 @@ export default function LanguageContextProvider({
       value={{
         language,
         toggleLanguage,
-      }}
-    >
+      }}>
       {children}
     </LanguageContext.Provider>
   );

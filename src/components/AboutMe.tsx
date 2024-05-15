@@ -32,7 +32,7 @@ const AboutMe: React.FC = () => {
     }
   };
   const paragraphs =
-    language === "DE" ? aboutMeData.paragraphs_DE : aboutMeData.paragraphs_EN;
+    language === "PT" ? aboutMeData.paragraphs_PT : aboutMeData.paragraphs_EN;
 
   return (
     <React.Fragment>
@@ -44,16 +44,15 @@ const AboutMe: React.FC = () => {
               scale: scaleProgess,
               opacity: opacityProgess,
               textAlign: "left",
-            }}
-          >
+            }}>
             <p className="text-[--black] mb-6">
               <span className="text-orange">&lt;</span>
-              {language === "DE" ? aboutMeData.title : aboutMeData.title_EN}
+              {language === "PT" ? aboutMeData.title : aboutMeData.title_EN}
               <span className="text-orange">/&gt;</span>
             </p>
 
             <h2 className="text-[--black] text-center max-lg:text-left break-words">
-              {language === "DE"
+              {language === "PT"
                 ? aboutMeData.description
                 : aboutMeData.description_EN}
             </h2>
@@ -75,13 +74,11 @@ const AboutMe: React.FC = () => {
             }}
             modules={[Autoplay, Pagination, Navigation]}
             onAutoplayTimeLeft={onAutoplayTimeLeft}
-            className="w-1/2 pt-32 relative z-2 pr-20 pb-32 pl-20 max-lg:w-full max-lg:pt-16 max-lg:pb-16 max-lg:pl-0 max-lg:pr-0 min-[1921px]:w-1/2"
-          >
+            className="w-1/2 pt-32 relative z-2 pr-20 pb-32 pl-20 max-lg:w-full max-lg:pt-16 max-lg:pb-16 max-lg:pl-0 max-lg:pr-0 min-[1921px]:w-1/2">
             {paragraphs.map((paragraph, index) => (
               <SwiperSlide
                 className="bg-[--darkblue] text-[--white] flex flex-col justify-center items-start gap-24 rounded-2xl p-20 border-solid border-[0.4rem] border-[--lightblue] hover:border-orange duration-500 transition-all text-left max-lg:p-10 cursor-grab"
-                key={index}
-              >
+                key={index}>
                 <div className="flex gap-6 flex-row justify-start items-center max-lg:flex-col max-lg:justify-center max-lg:text-center ">
                   <div>
                     <img
@@ -120,8 +117,7 @@ const AboutMe: React.FC = () => {
             ))}
             <div
               className="autoplay-progress absolute right-0 bottom-0 z-10 flex items-center justify-center font-bold text-orange text-4xl w-24 h-24 max-lg:w-16 max-lg:h-16 max-lg:text-3xl "
-              slot="container-end"
-            >
+              slot="container-end">
               <svg viewBox="0 0 48 48" ref={progressCircle}>
                 <circle cx="24" cy="24" r="20"></circle>
               </svg>

@@ -42,15 +42,15 @@ const Contact: React.FC = () => {
     try {
       const response = await axios.post(apiBaseUrl, data);
       console.log(response);
-      if (language === "DE") {
-        toast.success(toastMessages.successEmailSent.de);
+      if (language === "PT") {
+        toast.success(toastMessages.successEmailSent.pt);
       } else {
         toast.success(toastMessages.successEmailSent.en);
       }
     } catch (error) {
       console.log(error);
-      if (language === "DE") {
-        toast.error(toastMessages.failedEmailSent.de);
+      if (language === "PT") {
+        toast.error(toastMessages.failedEmailSent.pt);
       } else {
         toast.error(toastMessages.failedEmailSent.en);
       }
@@ -175,29 +175,26 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
     <React.Fragment>
       <section
         className="contact-container w-full min-[1921px]:px-[55rem] mt-16"
-        id="contact"
-      >
+        id="contact">
         <div
           className="title-container flex flex-col gap-6 justify-center items-center py-16  max-lg:p-16"
-          ref={ref}
-        >
+          ref={ref}>
           <motion.div
             ref={animationReference}
             style={{
               scale: scaleProgess,
               opacity: opacityProgess,
               textAlign: "center",
-            }}
-          >
+            }}>
             <p className="text-[--black] mb-6">
               <span className="text-[--orange]">&lt;</span>
-              {language === "DE" ? contactData.title.de : contactData.title.en}
+              {language === "PT" ? contactData.title.pt : contactData.title.en}
               <span className="text-[--orange]">/&gt;</span>
             </p>
 
             <h2 className="text-[--black] text-center">
-              {language === "DE"
-                ? contactData.description.de
+              {language === "PT"
+                ? contactData.description.pt
                 : contactData.description.en}
             </h2>
           </motion.div>
@@ -207,8 +204,7 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
             <Highlight
               code={codeSnippet}
               language="tsx"
-              theme={themes.nightOwl}
-            >
+              theme={themes.nightOwl}>
               {({ className, style, tokens, getLineProps, getTokenProps }) => (
                 <pre className={`${className} text-4xl `} style={style}>
                   {tokens.map((line, i) => (
@@ -225,15 +221,14 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
           <form
             className="flex flex-col gap-6 justify-center items-center  px-32 w-1/2 max-lg:w-full max-lg:p-10"
             onSubmit={notifySentForm}
-            autoComplete="off"
-          >
+            autoComplete="off">
             {contactData.inputfields.map((input, index) => (
               <input
                 key={index}
                 type={input.type}
                 placeholder={
-                  language === "DE"
-                    ? `${input.placeholder.de}`
+                  language === "PT"
+                    ? `${input.placeholder.pt}`
                     : `${input.placeholder.en}`
                 }
                 name={input.name}
@@ -266,8 +261,8 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
             <textarea
               rows={contactData.textarea.rows}
               placeholder={
-                language === "DE"
-                  ? `${contactData.textarea.placeholder.de}`
+                language === "PT"
+                  ? `${contactData.textarea.placeholder.pt}`
                   : `${contactData.textarea.placeholder.en}`
               }
               name={contactData.textarea.name}
@@ -289,8 +284,7 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
             <div className="privacy-checkbox flex gap-16">
               <label
                 className="block w-2 h-2 cursor-pointer"
-                htmlFor="checkbox-label"
-              >
+                htmlFor="checkbox-label">
                 <input
                   type="checkbox"
                   required
@@ -300,20 +294,20 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
                 <span className="checkbox"></span>
               </label>
               <p>
-                {language === "DE"
-                  ? `${contactData.privacyOptIn.checkbox.de}`
+                {language === "PT"
+                  ? `${contactData.privacyOptIn.checkbox.pt}`
                   : `${contactData.privacyOptIn.checkbox.en}`}
               </p>
             </div>
             <p>
-              {language === "DE"
-                ? `${contactData.privacyOptIn.description.de}`
+              {language === "PT"
+                ? `${contactData.privacyOptIn.description.pt}`
                 : `${contactData.privacyOptIn.description.en}`}
             </p>
             <Button
               value={
-                language === "DE"
-                  ? `${contactData.button.value.de}`
+                language === "PT"
+                  ? `${contactData.button.value.pt}`
                   : `${contactData.button.value.en}`
               }
               iconSVG={contactData.icon}

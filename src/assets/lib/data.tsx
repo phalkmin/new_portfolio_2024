@@ -1,57 +1,58 @@
-import adobexdicon from "../../assets/icons/adobexdicon.svg";
-import canvaicon from "../../assets/icons/canvaicon.svg";
 import figmaicon from "../../assets/icons/figmaicon.svg";
 import htmlicon from "../../assets/icons/htmlicon.svg";
 import cssicon from "../../assets/icons/cssicon.svg";
 import javascripticon from "../../assets/icons/javascripticon.svg";
-import typescripticon from "../../assets/icons/typescripticon.svg";
 import reacticon from "../../assets/icons/reacticon.svg";
 import nextjsicon from "../../assets/icons/nextjsicon.svg";
 import nodejsicon from "../../assets/icons/nodejsicon.svg";
-import tailwindcssicon from "../../assets/icons/tailwindicon.svg";
-import mongodbicon from "../../assets/icons/mongoicon.svg";
-import vuejsicon from "../../assets/icons/vueicon.svg";
-import expressicon from "../../assets/icons/expressicon.svg";
-import sassscssicon from "../../assets/icons/sassicon.svg";
 import trelloicon from "../../assets/icons/trelloicon.svg";
 import apiicon from "../../assets/icons/apiicon.svg";
-import axiosicon from "../../assets/icons/axiosicon.svg";
-import spotifyicon from "../../assets/icons/spotifyicon.svg";
 import netlifyicon from "../../assets/icons/netlifyicon.svg";
-import rendericon from "../../assets/icons/rendericon.svg";
-import jwticon from "../../assets/icons/jwticon.svg";
 import wordpressicon from "../../assets/icons/wordpressicon.svg";
 import shopifyicon from "../../assets/icons/shopifyicon.svg";
-import webflowicon from "../../assets/icons/webflowicon.svg";
-import tastyMockup from "../../assets/img/tasty_mockup.webp";
-import instorMockup from "../../assets/img/instor_mockup.webp";
-import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
+import auty from "../../assets/img/auty.webp";
+import ovolo from "../../assets/img/ovolo.webp";
+import piesse from "../../assets/img/piesse.webp";
+import wpinsight from "../../assets/img/wpinsight.webp";
 import profilepicture from "../img/me2.webp";
 import caricon from "../../assets/icons/car-icon.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
 import hardwareicon from "../../assets/icons/hardware-icon.svg";
 import nextjsiconwhite from "../../assets/icons/nextjsiconwhite.svg";
-import expressiconwhite from "../../assets/icons/expressiconwhite.svg";
+import aws from "../../assets/icons/aws-icon.svg";
+import bitbucket from "../../assets/icons/bitbucket-icon.svg";
+import cloudflare from "../../assets/icons/cloudflare-icon.svg";
+import digitalocean from "../../assets/icons/digitalocean-icon.svg";
+import elementor from "../../assets/icons/elementor-icon.svg";
+import gatsby from "../../assets/icons/gatsby-js-icon.svg";
+import git from "../../assets/icons/git-icon.svg";
+import ga from "../../assets/icons/google-analytics-icon.svg";
+import openai from "../../assets/icons/openai-icon.svg";
+import python from "../../assets/icons/python-icon.svg";
+import php from "../../assets/icons/php-icon.svg";
+import woocommerce from "../../assets/icons/woocommerce-icon.svg";
+
 import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
 import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
+import { TbBrandUpwork } from "react-icons/tb";
 import Imprint from "../../components/Imprint";
 import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
-    de: "Hi, ich bin Alpay",
-    en: "Hi, I'm Alpay",
+    pt: "Olá, sou Paulo H.",
+    en: "Hi, I'm Paulo H.",
   },
   subtitle: "Fullstack Developer ",
   description: {
-    de: "Ich bin Alpay, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
-    en: "I'm Alpay, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
+    pt: "Sou Paulo Henrique, especialista em otimização de WordPress com mais de 15 anos de experiência como líder técnico e gerente de projetos. Também crio ferramentas usando IA e sou um defensor do código aberto e da diversidade. Meu objetivo é fazer parte de projetos inspiradores!",
+    en: "I'm Paulo Henrique, a WordPress Optimization Specialist with 15+ Years of Expertise as Tech Lead and Project Manager. I also create tools using AI and am an advocate for Open Source and diversity. My goal is to be part of inspiring projects!",
   },
   buttons: [
     {
       name: "Contact",
       label: {
-        de: "Kontaktiere mich",
+        pt: "Vamos Conversar",
         en: "Contact me",
       },
       icon: FiMail,
@@ -60,8 +61,8 @@ export const headerIntroData = {
     {
       name: "Projects",
       label: {
-        de: "Meine Projekte",
-        en: "My Projects",
+        pt: "Alguns Projetos",
+        en: "Some Projects",
       },
       icon: FiGithub,
       color: "secondary-btn",
@@ -72,25 +73,24 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Tasty App",
+    title: "Ovolo Hotels",
     description:
-      "Eine Rezepte App, die wir als Team mit React und der MealDB API gebaut haben. Ich war der Front-End Entwickler und habe Features wie Voice Search oder Print to PDF programmiert. Das Design wurde mit Figma erstellt. Die Website ist responsive und mobile-optimiert.",
+      "A reformulação do site Ovolo Hotels em 2020 apresenta um design moderno e elegante, espelhando o estilo das suas propriedades e a nova identidade da marca com o lema 'Wonder. Full'. Mesclamos três sites diferentes em um, mantendo todo o SEO intacto.",
     description_EN:
-      "A recipe app that we built as a team with React and the MealDB API. I was the front-end developer and programmed features like voice search or print to PDF. The design was created with Figma. The website is responsive and mobile-optimized.",
+      "The Ovolo Hotels website redesign in 2020 features a modern and sleek design, mirroring the style of their properties and the new brand identity with the motto 'Wonder. Full'. Merged three different sites into one, keeping all SEO intact.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
       { name: "REST Api", icon: apiicon },
-      { name: "React", icon: reacticon },
       { name: "Figma", icon: figmaicon },
-      { name: "Canva", icon: canvaicon },
       { name: "Netlify", icon: netlifyicon },
       { name: "Trello", icon: trelloicon },
+      { name: "WordPress", icon: wordpressicon },
     ],
-    image: tastyMockup,
-    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
+    image: ovolo,
+    deploymenturl: "https://ovolohotels.com/",
+    githuburl: "",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -101,29 +101,19 @@ export const projectsData = [
     },
   },
   {
-    title: "Silentmoon",
+    title: "Auty",
     description:
-      "Eine Yoga und Meditations App, die wir als Team mit React, MongoDB, Express und Node.js gebaut haben. Meine Aufgabe als Gitmaster und Backend Entwickler bestand darin, das Backend mit Anbindung anhand einer Restful API zu programmieren und die Datenbank in MongoDB zu modellieren.",
+      "Conheça Auty, seu novo amigo e ajudante pessoal! Auty é um companheiro amigável de IA projetado para apoiar indivíduos no espectro neurodivergente. Deixe a Auty ser sua parceira em sua jornada!  (Vencedor do Coze Bot Challenge 2024)",
     description_EN:
-      "A yoga and meditation app that we built as a team with React, MongoDB, Express and Node.js. My task as a gitmaster and backend developer was to program the backend with connection using a restful API and to model the database in MongoDB.",
+      "Meet Auty, your new friend and personal helper! Auty is a friendly AI companion designed to support individuals in the neurodivergent spectrum. Let Auty be your partner on your journey! (Winner of the Coze Bot Challenge 2024)",
     technologies: [
       { name: "Html", icon: htmlicon },
-      { name: "CSS", icon: cssicon },
-      { name: "JavaScript", icon: javascripticon },
-      { name: "Spotify Api", icon: spotifyicon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
+      { name: "OpenAI", icon: openai },
     ],
-    image: silentmoonMockup,
-    deploymenturl: "https://silentmoon-grpw.onrender.com/",
-    githuburl:
-      "https://github.com/AlpayC/Fullstack_Abschlussprojekt_SilentMoon",
+    image: auty,
+    deploymenturl:
+      "https://dev.to/phalkmin/meet-auty-a-bot-designed-to-support-and-guide-autistic-individuals-on-coze-l5f",
+    githuburl: "",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -134,28 +124,49 @@ export const projectsData = [
     },
   },
   {
-    title: "Furniture Organizer",
+    title: "WP-AutoInsight",
     description:
-      "Eine Möbel-Organizer App, die wir als Duo-Team mit React, MongoDB, Express und Node.js programmiert haben. Als Gitmaster habe ich die Verknüpfung des Frontends mit dem Backend und die Datenbankmodellierung übernommen. Die App ist responsive und mobile-optimiert.",
+      "O plugin WP-AutoInsight permite gerar automaticamente postagens de blog para WordPress usando o poder da API OpenAI e Gemini. Basta fornecer um conjunto de palavras-chave ou assuntos e o plugin irá gerar conteúdo envolvente para você.",
     description_EN:
-      "A furniture organizer app that we programmed as a duo team with React, MongoDB, Express and Node.js. As a gitmaster, I took over the connection of the frontend to the backend and the database modeling. The app is responsive and mobile-optimized.",
+      "The WP-AutoInsight plugin allows you to automatically generate blog posts for WordPress using the power of the OpenAI & Gemini API. Simply provide a set of keywords or subjects, and the plugin will generate engaging content for you.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
-      { name: "Trello", icon: trelloicon },
+      { name: "WordPress", icon: wordpressicon },
+      { name: "OpenAI", icon: openai },
+      { name: "PHP", icon: php },
     ],
-    image: instorMockup,
-    deploymenturl: "https://mern-haushaltsbuch.onrender.com/",
-    githuburl: "https://github.com/AlpayC/Furniture_MERN",
+    image: wpinsight,
+    deploymenturl:
+      "https://wordpress.org/plugins/automated-blog-content-creator/",
+    githuburl: "https://github.com/phalkmin/openai-blog",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#E3964A",
+    },
+  },
+  {
+    title: "Piesse",
+    description:
+      "Uma loja de roupas chamada Piesse com back-end WooCommerce e layout Elementor.",
+    description_EN:
+      "A clothing store called Piesse with a WooCommerce backend and Elementor layout.",
+    technologies: [
+      { name: "Html", icon: htmlicon },
+      { name: "CSS", icon: cssicon },
+      { name: "JavaScript", icon: javascripticon },
+      { name: "WordPress", icon: wordpressicon },
+      { name: "Woocommerce", icon: woocommerce },
+      { name: "Elementor", icon: elementor },
+    ],
+    image: piesse,
+    deploymenturl: "https://piesse.com.br/",
+    githuburl: "",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -169,20 +180,38 @@ export const projectsData = [
 
 export const liveTickerData = {
   content: {
-    de: "Weitere Projekte auf Github",
+    pt: "Weitere Projekte auf Github",
     en: "More Projects on Github",
   },
 } as const;
 
 export const skillsDataWeb = [
   {
-    skillsTitle: "WebDevelopment",
+    skillsTitle: "Development",
     skills: [
       {
         title: "HTML",
         hash: "#html",
         icon: htmlicon,
         color: "#F1662A",
+      },
+      {
+        title: "OpenAI",
+        hash: "#OpenAI",
+        icon: openai,
+        color: "#000000",
+      },
+      {
+        title: "PHP",
+        hash: "#PHP",
+        icon: php,
+        color: "#6884BA",
+      },
+      {
+        title: "Python",
+        hash: "#python",
+        icon: python,
+        color: "#7f54b3",
       },
       {
         title: "CSS",
@@ -195,12 +224,6 @@ export const skillsDataWeb = [
         hash: "#JavaScript",
         icon: javascripticon,
         color: "#F7DF1E",
-      },
-      {
-        title: "TypeScript",
-        hash: "#TypeScript",
-        icon: typescripticon,
-        color: "#007ACC",
       },
       {
         title: "React",
@@ -220,52 +243,50 @@ export const skillsDataWeb = [
         icon: nodejsicon,
         color: "#339933",
       },
-      {
-        title: "Tailwind",
-        hash: "#Tailwind",
-        icon: tailwindcssicon,
-        color: "#38B2AC",
-      },
-      {
-        title: "MongoDB",
-        hash: "#MongoDB",
-        icon: mongodbicon,
-        color: "#449C45",
-      },
-      {
-        title: "Vue.js",
-        hash: "#Vue.js",
-        icon: vuejsicon,
-        color: "#4FC08D",
-      },
-      {
-        title: "Express",
-        hash: "#Express",
-        icon: [expressicon, expressiconwhite],
-        color: ["#000000", "#FFFFFF"],
-      },
-      {
-        title: "SASS/SCSS",
-        hash: "#SASS/SCSS",
-        icon: sassscssicon,
-        color: "#CC6699",
-      },
     ],
   },
 ] as const;
 
 export const skillsDataDesign = [
   {
-    skillsTitle: "Design",
+    skillsTitle: "Servers & CI/CD",
     skills: [
-      { title: "Figma", hash: "#Figma", icon: figmaicon, color: "#F24E1E" },
       {
-        title: "Adobe XD",
-        hash: "#Adobe XD",
-        icon: adobexdicon,
-        color: "#FF61F6",
+        title: "CloudFlare",
+        hash: "#CloudFlare",
+        icon: cloudflare,
+        color: "#F48120",
       },
-      { title: "Canva", hash: "#Canva", icon: canvaicon, color: "#00C4CC" },
+      {
+        title: "AWS",
+        hash: "#AWS",
+        icon: aws,
+        color: "#f90",
+      },
+      {
+        title: "DigitalOcean",
+        hash: "#DigitalOcean",
+        icon: digitalocean,
+        color: "#0080FF",
+      },
+      {
+        title: "BitBucket",
+        hash: "#BitBucket",
+        icon: bitbucket,
+        color: "#2684FF",
+      },
+      {
+        title: "Git/Github",
+        hash: "#Git",
+        icon: git,
+        color: "#F4511E",
+      },
+      {
+        title: "Google Analytics",
+        hash: "#GA",
+        icon: ga,
+        color: "#e37400",
+      },
     ],
   },
 ] as const;
@@ -278,7 +299,25 @@ export const skillsDataCMS = [
         title: "WordPress",
         hash: "#WordPress",
         icon: wordpressicon,
-        color: "#21759B",
+        color: "#0073AA",
+      },
+      {
+        title: "Elementor",
+        hash: "#Elementor",
+        icon: elementor,
+        color: "#ED345E",
+      },
+      {
+        title: "Woocommerce",
+        hash: "#Woocommerce",
+        icon: woocommerce,
+        color: "#7f54b3",
+      },
+      {
+        title: "Gatsby",
+        hash: "#Gatsby",
+        icon: gatsby,
+        color: "#639",
       },
       {
         title: "Shopify",
@@ -286,106 +325,105 @@ export const skillsDataCMS = [
         icon: shopifyicon,
         color: "#7AB55C",
       },
-      {
-        title: "Webflow",
-        hash: "#Webflow",
-        icon: webflowicon,
-        color: "#4353FF",
-      },
     ],
   },
 ] as const;
 
 export const navLinks = [
-  { de: "Home", en: "Home", hash: "#home", icon: GoHome },
-  { de: "Skills", en: "Skills", hash: "#skills", icon: GoStack },
-  { de: "Projekte", en: "Projects", hash: "#projects", icon: GoProject },
-  { de: "Über mich", en: "About me", hash: "#about-me", icon: GoPerson },
-  { de: "Kontakt", en: "Contact", hash: "#contact", icon: GoMail },
+  { pt: "Home", en: "Home", hash: "#home", icon: GoHome },
+  { pt: "Skills", en: "Skills", hash: "#skills", icon: GoStack },
+  { pt: "Projetos", en: "Projects", hash: "#projects", icon: GoProject },
+  { pt: "Sobre", en: "About me", hash: "#about-me", icon: GoPerson },
+  { pt: "Contato", en: "Contact", hash: "#contact", icon: GoMail },
 ] as const;
 
 export const FooterLinks = [
-  { de: "Impressum", en: "Imprint", hash: "#imprint", data: <Imprint /> },
-  { de: "Datenschutz", en: "Privacy", hash: "#privacy", data: <Privacy /> },
+  { pt: "Imprimir", en: "Imprint", hash: "#imprint", data: <Imprint /> },
+  { pt: "Privacidade", en: "Privacy", hash: "#privacy", data: <Privacy /> },
 ] as const;
 
 export const sideBarRightMail = {
-  link: "mailto:myemail@com",
-  text: "myemail@com",
+  link: "mailto:phalkmin@protonmail.com",
+  text: "phalkmin@protonmail.com",
 } as const;
 
 export const sideBarLeftSocials = [
   {
-    link: "https://www.linkedin.com/in/alpay/",
+    link: "https://www.linkedin.com/in/phalkmin/",
     icon: FiLinkedin,
     altimgname: "linkedin",
   },
   {
-    link: "https://github.com/AlpayC",
+    link: "https://github.com/phalkmin",
     icon: FiGithub,
     altimgname: "github",
   },
   {
-    link: "mailto:myemail@com",
+    link: "mailto:phalkmin@protonmail.com",
     icon: FiMail,
     altimgname: "mail",
+  },
+  {
+    link: "https://www.upwork.com/freelancers/~01d19e7e09c71181a4/",
+    icon: TbBrandUpwork,
+    altimgname: "Upwork",
   },
 ] as const;
 
 export const quotesData = [
   {
-    de: '"Es ist überhaupt nicht wichtig, es beim ersten Mal richtig zu machen. Es ist entscheidend, es beim letzten Mal richtig zu machen."',
-    en: `"It's not at all important to get it right the first time. It's vitally important to get it right the last time."`,
-    author: "Andrew Hunt",
+    pt: '"No meu cartão de visitas, sou um consultor de tecnologia. Na minha mente, sou um ativista do software livre. Mas no meu coração, sei que roubar citações é errado."',
+    en: `"On my business card, I am a tech consultant. In my mind, I am a free software activist. But in my heart, I know that stealing quotes is wrong."`,
+    author: "",
   },
   {
-    de: '"Das Web ist wie eine Leinwand und der Code ist die Farbe. Erschaffe dein Meisterwerk."',
-    en: `"The web is like a canvas, and code is the paint. Create your masterpiece."`,
+    pt: '"Falar é fácil, me mostre o código"',
+    en: `"Talk is cheap, show me the code"`,
   },
 ] as const;
 
 export const aboutMeData = {
-  title: "Über mich",
+  title: "Sobre min",
   title_EN: "About me",
-  description: "Ein paar Codeschnippsel über mich",
+  description: "Uns pedacinhos de código sobre mim",
   description_EN: "A few code snippets about me",
-  paragraphs_DE: [
+  paragraphs_PT: [
     {
-      title: "Die Schaltkreise meines Herzens",
+      title: "O que está em minha mente",
       description:
-        "Wenn ich nicht in der digitalen Welt unterwegs bin, durchstreife ich die faszinierende Welt der Technik und Hardware. Schaltkreise und Lötstellen sind für mich wie Puzzleteile eines aufregenden Abenteuers.",
+        "Um nerd de carteirinha, sou um profissional dedicado e focado em negócios digitais, aliando excelência técnica com centelha criativa. Reconhecido pela minha capacidade de resolver problemas de forma criativa.",
       icon: hardwareicon,
     },
     {
-      title: "Auf der Überholspur des Lebens",
+      title: "Solucionador de desafios do mundo real",
       description:
-        "Neben dem Coden befinde ich mich gerne auf der Überholspur – im wahrsten Sinne des Wortes. Autos sind meine Leidenschaft, und ich genieße es, mit PS-starken Maschinen auf unbekannten Straßen unterwegs zu sein.",
+        "Desde a realização de auditorias completas de SEO e de desempenho do site até a elaboração de soluções robustas, sou especializado em orientar projetos como consultor e coach líder de tecnologia, garantindo que o site seja rápido e confiável.",
       icon: caricon,
     },
     {
-      title: "Entdeckungsfreude als Lebensmotto",
+      title: "Autor e Palestrante",
       description:
-        "Meine Reise als Webentwickler ist nur ein Teil meines Lebenswegs. Ich lebe nach dem Motto, dass das Abenteuer erst beginnt, wenn man das Bekannte hinter sich lässt. Das Entdecken neuer Orte ist meine Form der kreativen Inspiration.",
+        "Publiquei livros e escrevi artigos técnicos por amor a compartilhar meu conhecimento. Proferiu palestras em eventos de prestígio como a Campus Party, compartilhando ideias e multiplicando a paixão por tecnologia e desenvolvimento.",
       icon: travelicon,
     },
   ],
   paragraphs_EN: [
     {
-      title: "The Circuits of My Heart",
+      title: "What Lies in My Mind",
       description:
-        "When I'm not navigating the digital world, I explore the fascinating realm of technology and hardware. Circuits and solder joints are like puzzle pieces to me in an exciting adventure.",
+        "A huge nerd, I am a dedicated professional focused in digital business, combining technical excellence with a creative spark. Renowned for my ability to solve problems creatively.",
       icon: hardwareicon,
     },
     {
-      title: "On the Fast Lane of Life",
+      title: "Solver of Real-World Challenges",
       description:
-        "Besides coding, I like to be on the fast lane - in the truest sense of the word. Cars are my passion, and I enjoy being on unknown roads with powerful machines.",
+        "From conducting thorough SEO and site performance audits to crafting robust solutions, I specialize in guiding projects as a tech lead advisor and coach, making sure that the site is fast and reliable.",
       icon: caricon,
     },
     {
-      title: "The Joy of Discovery as a Life Motto",
+      title: "Author & Speaker",
       description:
-        "My journey as a web developer is only a part of my life path. I live by the motto that the adventure only begins when you leave the familiar behind. Discovering new places and cultures is my form of creative inspiration.",
+        "I published books and wrote technical articles for love of sharing my knowledge. Delivered talks at prestigious events like the Campus Party, sharing ideas and multiplying the passion for technology and development.",
       icon: travelicon,
     },
   ],
@@ -393,23 +431,23 @@ export const aboutMeData = {
 
 export const contactData = {
   title: {
-    de: "Kontakt",
+    pt: "Contato",
     en: "Contact",
   },
   description: {
-    de: "Schreib mir eine Nachricht und ich melde mich bei dir.",
+    pt: "Escreva uma mensagem e eu retornarei assim que possível",
     en: "Write me a message and I will get back to you.",
   },
   inputfields: [
     {
       name: "name",
       placeholder: {
-        de: "Dein Name",
+        pt: "Seu Nome",
         en: "Your Name",
       },
       type: "text",
       validation: {
-        de: "Bitte gebe deinen Namen ein",
+        pt: "Por favor digite seu nome",
         en: "Please fill in your name",
       },
       pattern: "{2}",
@@ -417,12 +455,12 @@ export const contactData = {
     {
       name: "email",
       placeholder: {
-        de: "Deine E-Mail Adresse",
+        pt: "Seu E-mail",
         en: "Your E-Mail",
       },
       type: "email",
       validation: {
-        de: "Bitte gebe deine Email ein",
+        pt: "Por favor digite seu e-mail",
         en: "Please fill in your email",
       },
       pattern: "[@]{4}",
@@ -430,12 +468,12 @@ export const contactData = {
     {
       name: "subject",
       placeholder: {
-        de: "Deine Betreff",
+        pt: "Assunto",
         en: "Your Subject",
       },
       type: "text",
       validation: {
-        de: "Bitte gebe einen Betreff ein",
+        pt: "Por favor digite o Assunto",
         en: "Please fill in your subject",
       },
       pattern: "{10}",
@@ -443,20 +481,20 @@ export const contactData = {
   ],
   textarea: {
     placeholder: {
-      de: "Deine Nachricht",
+      pt: "Mensagem",
       en: "Your Message",
     },
     name: "message",
     rows: 10,
     validation: {
-      de: "Bitte gebe deine Nachricht ein",
+      pt: "Por favor, digite a mensagem",
       en: "Please fill in your message",
     },
     pattern: "{10}",
   },
   button: {
     value: {
-      de: "Absenden",
+      pt: "Enviar",
       en: "Send",
     },
   },
@@ -469,11 +507,11 @@ export const contactData = {
   },
   privacyOptIn: {
     checkbox: {
-      de: "Ich stimme zu, dass Alpay meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
-      en: "I agree that Alpay may use my personal data (name and e-mail address) to contact me.",
+      pt: "Concordo que Paulo H. utilize meus dados pessoais (nome e e-mail) para entrar em contato comigo.",
+      en: "I agree that Paulo H. may use my personal data (name and e-mail address) to contact me.",
     },
     description: {
-      de: "Durch Übermittlung dieser Anfrage bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben",
+      pt: "Ao enviar esta solicitação, você reconhece que leu a Política de Privacidade",
       en: "By submitting this request, you acknowledge that you have read the Private Policy",
     },
   },
@@ -481,26 +519,26 @@ export const contactData = {
 
 export const toastMessages = {
   loadingProject: {
-    de: "🦄 Die Live Demo wird gleich geöffnet. Server werden gestartet...",
-    en: "🦄 The live demo will open shortly. Starting servers...",
+    pt: "🥷🏽 A demo será aberta em breve. Iniciando servidores...",
+    en: "🥷🏽 The live demo will open shortly. Starting servers...",
   },
   successEmailSent: {
-    de: "🦄 Vielen Dank für deine Email. Ich werde mich schnellstmöglich bei dir melden",
-    en: "🦄 Thank you for your email. I will get back to you as soon as possible",
+    pt: "🥷🏽 Obrigado pelo seu e-mail. Entrarei em contato com você o mais rápido possível",
+    en: "🥷🏽 Thank you for your email. I will get back to you as soon as possible",
   },
   failedEmailSent: {
-    de: "🦄 Leider hat der Versand deiner Email nicht geklappt. Bitte versuche es später noch einmal",
-    en: "🦄 Unfortunately the sending of your email did not work. Please try again later",
+    pt: "🥷🏽 Infelizmente o envio do seu e-mail não funcionou. Por favor, tente novamente mais tarde",
+    en: "🥷🏽 Unfortunately the sending of your email did not work. Please try again later",
   },
   failedValidationName: {
-    de: "Bitte gebe deinen Namen ein",
+    pt: "Por favor preencha seu nome",
     en: "Please fill in your name",
   },
 } as const;
 
 export const buttonLabels = {
   language: {
-    de: "DE",
+    pt: "PT",
     en: "EN",
   },
 } as const;

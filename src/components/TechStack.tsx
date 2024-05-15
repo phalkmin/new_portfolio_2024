@@ -9,7 +9,6 @@ import {
 import { useTheme } from "../context/theme-context";
 import { useLanguage } from "../context/language-context";
 import SkillSection from "./SkillSection";
-import RadialGradient from "./RadialGradient";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const TechStack: React.FC = () => {
@@ -28,27 +27,20 @@ const TechStack: React.FC = () => {
       <section
         className="relative tech-stack max-lg:p-16 "
         id="skills"
-        ref={ref}
-      >
-        <RadialGradient
-          scale="scale-y-[3]"
-          opacity={theme === "light" ? "opacity-30" : "opacity-30"}
-          position="top-[55rem]"
-        />
+        ref={ref}>
         <div className="title-container flex flex-col justify-center items-center p-32 w-1/2   gap-6 min-[1921px]:px-[55rem] max-lg:p-0  max-lg:w-full max-lg:items-start max-lg:py-16 ">
           <motion.div
             ref={animationReference}
             style={{
               scale: scaleProgess,
               opacity: opacityProgess,
-            }}
-          >
+            }}>
             <p className="font-black mb-6">
               <span className="text-[--orange]">&lt;</span>Skills
               <span className="text-[--orange]">/&gt;</span>
             </p>
             <h2>
-              {language === "DE"
+              {language === "PT"
                 ? "Meine Techstack und Skills"
                 : "My TechStack and Skills"}
             </h2>

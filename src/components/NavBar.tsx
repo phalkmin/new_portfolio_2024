@@ -79,9 +79,7 @@ const NavBar: React.FC = () => {
         to={link}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className={`relative ${linkClasses}`}
-        aria-aria-current={link}
-      >
+        className={`relative ${linkClasses}`}>
         <span>
           {leftArrow}
           {children}
@@ -103,8 +101,7 @@ const NavBar: React.FC = () => {
                 }`
               : ""
           }
-   `}
-        >
+   `}>
           {navLinks.map((link, index) => (
             <CustomNavLink key={index} link={link.hash} linkEn={link.en}>
               {link.en === activeSection ? (
@@ -112,7 +109,7 @@ const NavBar: React.FC = () => {
                   <span className="text-[--orange] absolute -left-5 top-0">
                     &lt;
                   </span>
-                  {language === "DE" ? link.de : link.en}
+                  {language === "PT" ? link.pt : link.en}
                   {/* {link.de.toLocaleUpperCase()} */}
                 </div>
               ) : (
@@ -120,9 +117,8 @@ const NavBar: React.FC = () => {
                   onClick={() => {
                     setActiveSection(link.en);
                     setTimeOfLastClick(Date.now());
-                  }}
-                >
-                  {language === "DE" ? link.de : link.en}
+                  }}>
+                  {language === "PT" ? link.pt : link.en}
 
                   {/* {link.de.toLocaleUpperCase()} */}
                 </div>
@@ -136,8 +132,7 @@ const NavBar: React.FC = () => {
         <nav
           className={` max-lg:flex w-[100vw] flex-row justify-between fixed bottom-0 left-0 z-50 bg-darkblue p-10  text-center items-center transition-all ease-in-out duration-100 rounded-t-3xl bg-opacity-100 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] ${
             theme === "dark" ? "bg-darkblue" : "bg-white"
-          }`}
-        >
+          }`}>
           {navLinks.map((link, mobileIndex) => (
             <CustomNavLink key={mobileIndex} link={link.hash} linkEn={link.en}>
               {link.en === activeSection ? (
@@ -156,8 +151,7 @@ const NavBar: React.FC = () => {
                         block: "start",
                       });
                     }
-                  }}
-                >
+                  }}>
                   <link.icon />
                 </div>
               )}
